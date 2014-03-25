@@ -16,6 +16,8 @@ jQuery 용 슬라이더 그리고 롤링 플러그인 입니다.
 
 ### 초기 설정
 
+jQuery 1.5 이상에서 작동합니다.
+
 ```html
 <script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
 <script type="text/javascript" language="javascript" src="./jquery-syaku.rolling.js"></script>
