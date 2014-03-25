@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+  <meta content="MEI" name="Generator" />
+  <meta content="1.0.0" name="Version" />
+  <meta content="Seok Kyun. Choi. (http://syaku.tistory.com)" name="Programmed" />
+  <title>jQuery syaku rolling Mobile</title>
+
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+  <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+  <script src="./jquery-slider-rolling.js"></script>
+
+</head>
+<body>
+
+<!-- jQuery Mobile page -->
+<div data-role="page" data-theme="a">
+
+<div id="p_click">&lt;&lt;&lt;</div>
+<div id="n_click">&gt;&gt;&gt;</div>
+<div id="srolling" style="position: relative;overflow:hidden;width:100%;height:100px;border:#e0e2ef 1px solid;"></div>
+<script>
+    jQuery(function() {
+    
+    var data = [
+      "<div>1</div>",
+      "<div>2</div>",
+      "<div>3</div>",
+      "<div>4</div>",
+      "<div>5</div>",
+      "<div>6</div>"
+    ];
+
+    jQuery("#srolling").srolling({
+      data : data, // 노출될 아이템
+      auto : false, //자동 롤링
+      width : 100, // 노출될 아이템 크기
+      item_count : 2, // 이동될 아이템 수
+      cache_count : 10, // 노출 아이템 수
+      delay : 1000, // 이동 아이템 딜레이
+      move : 'left', // 이동 방향
+      prev : '#p_click', // 이동 버튼
+      next : '#n_click' // 이동 버튼
+    });
+  });
+
+  </script>
+
+</div>
+</body>
+</html>
