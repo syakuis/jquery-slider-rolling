@@ -12,7 +12,7 @@ jQuery 용 슬라이더 그리고 롤링 플러그인 입니다.
 
 순차적으로 아이템이 노출되는 방식이 아닌 원하는 아이템이 노출되게 블릿을 클릭하면 해당 아이템이 노출되는 방식도 지원합니다.
 
-* 데모 실행 : http://syakuis.github.io/demo/jquery-slider-rolling/demo.html
+* 데모 : http://syakuis.github.io/demo/jquery-slider-rolling/demo.html
 * 블로그 : http://syaku.tistory.com/244
 
 
